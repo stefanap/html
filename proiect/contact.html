@@ -1,0 +1,123 @@
+<DOCTYPE html>
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="mystyle3.css">
+</head>
+<body>
+
+	<div id="top">
+		<img id="center" src="Endava.png" alt="Endava" height="20%">
+	</div>
+
+	
+<hr>
+</hr>
+
+
+<div class="row">
+<div class="col=xs-12 col-lg-12 center font">
+<p><a href="home.html">Home</a></p>
+<p><a href="#"> Work </a></p>
+<p><a href="#"> Contact </a></p>
+
+<img src="twitter.png" alt="Endava" height="2%" style="float:right;">
+<img src="facebook.png" alt="Endava" height="2%" style="float:right;">
+</h3>
+<hr>
+</hr>
+<hr>
+</hr>
+
+</div>
+
+<div class="row">
+  <div class="col-xs-4 col-lg-4 pattern"></div>
+  <div class="col-xs-4 col-lg-4 center">CONTACT US</div>
+  <div class="col-xs-4 col-lg-4 pattern"></div>
+  <br>
+  <br>
+ </div>
+ 
+ <hr>
+</hr>
+  
+ 
+
+  
+   <form name="myForm" onsubmit="return validateForm()">
+	<div class="row">
+	
+		<div class="col-xs-12 col-sm-12 col-lg-4">
+			
+		<label for="name" name="name">Name:</label>
+		<input type="text" class="form-control" id="email" placeholder="Enter name">
+			
+		</div>
+		
+		<div class="col-xs-12 col-sm-12 col-lg-4">
+			
+				<label for="email" name="email">Email:</label>
+				<input type="email" class="form-control" id="pwd" placeholder="Enter email">
+		
+		</div>
+		
+		<div class="col-xs-12 col-sm-12 col-lg-4">
+			
+				<label for="wb" name="wb">Website:</label>
+				<input type="text" class="form-control" id="wb" placeholder="Enter website">
+			
+		</div>
+		
+	</div>
+	
+	<div class="row">
+		<div class="col-xs-12 col-lg-12">
+		
+			<label for="tb">Message</label>
+			<input id="box" type="textbox" class="form-control" id="tb">
+		</div>
+		</div>
+	
+	
+    <div class="row">
+		<div class="col-xs-12 col-lg-12 col-sm-12">
+    <button id="button" type="submit" class="btn btn-default">Submit</button>
+	</div>
+	</div>
+	
+	
+  </form>
+
+<footer >
+<div class="col-sm-6 col-xs-6 f">@2016 Endava Graduates </div>
+ <a class=" col-lg-2  col-sm-1  col-xs-2 bf f" href="home.html">Home</a>  
+ <a class="col-lg-2 col-sm-1 col-xs-2 bf f" href="/work/">Work </a>  
+ <a class="col-lg-2 col-sm-1 col-xs-2 bf f" href="contact.html">Contact</a> 
+
+<script>
+function validateForm() {
+    var x = document.forms["myForm"]["email"].value;
+	var y = document.forms["myForm"]["pwd"].value;
+	var z = document.forms["myForm"]["wb"].value;
+    if (x == null || x == "") {
+        alert("Name field must be filled out");
+        return false;
+    }
+	 if (y == null || y == "") {
+        alert("Email must be filled out");
+        return false;
+    }
+	 if (z == null || z == "") {
+        alert("Website must be filled out");
+        return false;
+    }
+	
+	
+}
+</script>
+</footer>
+</body>
